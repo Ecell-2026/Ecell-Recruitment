@@ -1,0 +1,34 @@
+# ---- Secrets (most important) ----
+.env
+.env*.local
+
+# ---- Personal Claude Code files ----
+# CLAUDE.md, .claude/rules/ and docs/ ARE committed: they're the shared plan.
+CLAUDE.local.md
+.claude/settings.local.json
+.claude/worktrees/
+
+# ---- Dependencies ----
+node_modules/
+
+# ---- Next.js build output ----
+.next/
+out/
+build/
+next-env.d.ts
+*.tsbuildinfo
+
+# ---- Vercel ----
+.vercel/
+
+# ---- Logs ----
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
