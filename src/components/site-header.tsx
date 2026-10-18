@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { MotionConfig, motion, useMotionValueEvent, useScroll } from "motion/react";
 import { site } from "@/config/site";
 
@@ -30,23 +31,25 @@ export function SiteHeader() {
         transition={{ duration: 0.25, ease: "easeOut" }}
         className="fixed inset-x-0 top-0 z-50 px-5 pt-3"
       >
-        <header className="mx-auto flex max-w-5xl items-center gap-3 rounded-2xl border border-border bg-card/90 px-4 py-3 backdrop-blur-md">
-          <Image
-            src="/ecell-logo.png"
-            alt="E-Cell RBU logo"
-            width={108}
-            height={108}
-            priority
-            className="size-10 shrink-0"
-          />
-          <div>
-            <p className="font-heading text-lg font-bold leading-tight">
-              {site.name}
-            </p>
-            <p className="text-[0.7rem] uppercase tracking-[0.2em] text-muted-foreground">
-              Entrepreneurship Cell
-            </p>
-          </div>
+        <header className="mx-auto max-w-5xl rounded-2xl border border-border bg-card/90 backdrop-blur-md">
+          <Link href="/" className="flex items-center gap-3 px-4 py-3">
+            <Image
+              src="/ecell-logo.png"
+              alt="E-Cell RBU logo"
+              width={108}
+              height={108}
+              priority
+              className="size-10 shrink-0"
+            />
+            <div>
+              <p className="font-heading text-lg font-bold leading-tight">
+                {site.name}
+              </p>
+              <p className="text-[0.7rem] uppercase tracking-[0.2em] text-muted-foreground">
+                Entrepreneurship Cell
+              </p>
+            </div>
+          </Link>
         </header>
       </motion.div>
     </MotionConfig>
