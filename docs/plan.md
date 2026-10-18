@@ -39,7 +39,7 @@ For Harshavi and Rishi. Claude reads this only when asked.
 
 ## Pending inputs
 
-- [ ] E-Cell logo file
+- [x] E-Cell logo file (`public/ecell-logo.png`)
 - [ ] Domain descriptions
 - [ ] Domain-specific fields for each domain
 - [ ] Real open/close dates
